@@ -414,3 +414,440 @@ body {
 .item-select-slid {
     background: #FFF  !important;
 }
+
+/*Carrusel de imagenes FIN*/
+
+#hamburgermenu {
+    display: none;
+}
+
+#contenedorDespegable {
+    background-color: rgba(89, 88, 88, 0.727);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    display: none;
+    z-index: 9999;
+}
+
+.contenedorDespegable-lista {
+    list-style: none;
+    padding: 20px;
+    background-color: #145cd4;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    height: 200px;
+}
+
+.contenedorDespegable-lista > li > a {
+    margin-right: 0;
+    font-size: 18px;
+}
+
+.contenedorDespegable-lista > li {
+    margin-bottom: 20px;
+}
+
+.nosotros-contenedor {
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.nosotros-titulo {
+    text-align: center;
+    color: #145cd4;
+}
+
+.nosotros-descripcion {
+    text-align: justify;
+    line-height: 25px;    
+}
+/*SORTEO CONTENEDOR*/
+.sorteo-contenedor {
+    height: 540px;
+    background-color: #145cd4;
+    padding: 1rem 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.sorteo-titulo {
+    text-align: center;
+    font-size: 40px; /*25px en mobile responsive*/
+}
+
+.info-sorteo  {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+.info-sorteo > img{
+    width: 170px;
+    height: 170px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.form-sorteo {
+    background-color: #fff;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+.form-sorteo > input, .form-sorteo > select {
+   margin-bottom: 10px;
+   outline: none;
+   padding: 8px 0;
+   border: none;
+   border-bottom: 2px solid #145cd4;
+}
+
+#btn-registro {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+#btn-registro:hover {
+    background-color: #145cd4;
+    color: #fff;
+}
+
+/*Nuevos estilos  FIN*/
+
+
+/*Responsive Design*/
+@media only screen and (max-width:920px) {
+    .ocultar {
+        display: none;
+    }
+    #hamburgermenu {
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-right: 1rem;
+    }
+    .imagen-titulo > img {
+        height: 40px;
+        width: 40px;
+        margin: 0;
+    }
+    .fondo-parte-central {
+        background-color: #145cd4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 0 15px;
+        padding-bottom: 1rem;
+        flex-direction: column;
+    }
+    
+    .fondo-texto-general {
+        width: 85%;
+    }
+    
+    .texto-general {
+        color: white;
+        font-weight: 100;
+        margin-top: 15px;
+    }
+    
+    .fondo-texto-general > h4 {
+        text-align: justify;
+        line-height: 1.9;
+    }
+
+    .fondo-botones {
+        margin-bottom: 1.5rem;
+    }
+    
+    .botones {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #145cd4;
+        font-weight: 700;
+        font-size: 15px;
+        transition: 0.3s ease background;
+        margin-top: 15px;
+    }
+    
+    .fondo-botones > button:hover {
+        background: #80a8ec;
+    }
+    .fondo-seccion-imagen {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .primera-seccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #container-slider {
+        position: relative;
+        display: block;
+        width: 70%;
+    }
+    .fondo-texto-abajo-derecha {
+        width: 80%;
+        margin: auto;
+    }
+    .titulo-seccion2 {
+        margin-top: 1rem;
+    }
+    .titulo-seccion2 > h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .fondo-imagen2 {
+        margin-right: 0rem;
+    }
+    .fondo-imagen2 > img {
+        width: 100%;
+    }
+    .fondo-parte-central-abajo {
+        height: auto;
+    }
+
+    .fondo-parte-central-abajo-titulo > h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .fondo-tarjetas {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+    .card-robot {
+        margin-bottom: 1rem;
+    }
+    .nosotros-contenedor, .sorteo-contenedor  {
+        height: auto;
+    }
+    .sorteo-contenedor {
+        padding: 1.5rem;
+    }
+    .sorteo-titulo {
+        font-size: 20px;
+    }
+
+    .info-sorteo {
+        margin-bottom: 1.3rem;
+    }
+}
+
+/*Responsive Design*/
+
+@media only screen and (max-width:461px) { /*Estilos que se aplican desde 412px de ancho para abajo*/
+
+    /*Estilos del header */
+    .imagen-titulo > h2 {
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+
+    /* Estilos main */
+
+    .fondo-parte-central {
+        flex-direction: column;
+    }
+
+    .fondo-texto-general {
+        width: 100%;
+    }
+
+    .texto-general {
+        margin-top: 20px;
+        /* width: 70%; */
+    }
+
+    .fondo-texto-general > h1 {
+        font-size: 18px;
+    }
+
+    .fondo-texto-general > h4 {
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
+    .botones {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .uno {
+        margin-right: 10px;
+    }
+
+    .fondo-imagen {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .fondo-imagen > img {
+        height: 170px;
+        padding-right: 50px;
+        border-radius: 10px;
+    }
+
+
+    /* Estilos seccion 2 */
+
+    .fondo-imagen2 {
+        margin-right: 0rem;
+        width: 100%;
+    }
+    .titulo-seccion2 > h2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .fondo-imagen2 > img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .fondo-botones-derecha-abajo > button {
+        padding: 5px;
+        font-size: 12px;
+        margin-right: 2px;
+    }
+
+    .fondo-texto-abajo-derecha {
+        width: 100%;
+    }
+
+    .fondo-texto-abajo-derecha > p {
+        text-align: justify;
+        line-height: 1.3;
+        font-size: 15px;
+    }
+
+    /* Estilos seccion 3. Tarjetas */
+
+    .fondo-parte-central-abajo {
+        height: auto;
+    }
+
+    .fondo-parte-central-abajo-titulo > h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .card-robot {
+        height: auto;
+    }
+
+    .tarjetas > img {
+        width: 100%;
+        /* height: 11rem; */
+    }
+
+    .tarjetas > p {
+        font-size: 0.9rem;
+    }
+
+    /* Estilos footer */
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociales {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fondo-enlaces-footer {
+        justify-content: start;
+        padding-top: 1rem;
+    }
+
+    .estilos-enlaces-inferiores {
+        margin-right: 5px;
+        font-size: 0.9rem;
+    }
+
+    .fondo-derechos {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .fondo-derechos > p {
+        display: flex;
+        justify-content: start;
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+    .info-sorteo > img {       
+        display: none;
+     }
+    .info-sorteo > figcaption {
+        font-size: 16px;
+        width: 70%;
+        margin: auto;
+    }
+    #container-slider
+    {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+        .content_slider h2 {
+            font-size: 15pt !important;
+        }
+        .content_slider p {
+            font-size: 12pt !important;
+        }
+        #container-slider .arrowPrev, #container-slider .arrowNext{
+            font-size: 20pt;
+        }
+        #container-slider .arrowPrev{
+            left: 15px;
+        }
+        #container-slider .arrowNext{
+            right: 15px !important;
+        }
+        #slider{
+            height: 400px;
+            min-height: 400px;
+        }
+        #slider li .content_slider{
+            padding: 10px 35px;
+        }
+        .btnSlider{
+            padding: 10px 30px;
+            font-size: 10pt;
+        }
+}
