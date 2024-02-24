@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+}
+
+/* Estilos header */
+
+.fondo-parte-superior {
+    background-color: #145cd4;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-titulo {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.estilo-titulo, .estilos-enlaces-superiores {
+    color: white;
+}
+
+.imagen-titulo > img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin: 5px 5px 0 35px;
+    cursor: pointer;
+}
+
+.imagen-titulo > h2 {
+    margin-top: 5px;
+    cursor: pointer
+}
+
+.fondo-parte-superior2 {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+.fondo-parte-superior2-1 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* background-color: red; */
+}
+
+.estilos-enlaces-superiores {
+    text-decoration: none;
+    margin-right: 35px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    padding: 8px;
+    border-radius: 10px; 
+}
+
+
+.estilos-enlaces-superiores:hover {
+    background: white;
+    color: #145cd4;
+}
+
+/* Estilos main */
+
+.fondo-parte-central {
+    background-color: #145cd4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    padding: 0 5%;
+}
+
+.fondo-texto-general {
+    width: 50%;
+}
+
+.texto-general {
+    color: white;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+}
+
+.fondo-texto-general > h4 {
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.botones {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #145cd4;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3s ease background;
+    text-decoration: none;
+}
+
+.fondo-botones > a:hover {
+    background: #80a8ec;
+}
+
+.uno {
+    margin-right: 20px;
+}
+
+.fondo-imagen {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-imagen > img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Estilos seccion 2 */
+
+.fondo-seccion-imagen {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.fondo-imagen2 {
+    margin-right: 3rem;
+}
+
+.fondo-imagen2 > img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.fondo-botones-derecha-abajo {
+    margin: 20px 0
+}
+
+.fondo-botones-derecha-abajo > button, .fondo-botones-derecha-abajo > a {
+    background-color: rgb(187, 187, 187);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 20px;
+    transition: 0.3s ease background;
+    text-decoration: none;
+}
+
+.fondo-botones-derecha-abajo > a {
+    background-color: #fff;
+    color: #145cd4;
+}
+
+.fondo-botones-derecha-abajo > button:hover {
+    background: #80a8ec;
+}
+
+.fondo-texto-abajo-derecha > p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Estilos seccion 3. Tarjetas */
+
+.fondo-parte-central-abajo {
+    background-color: #145cd4;
+    display: flex;
+    flex-direction: column;
+    height: 37.5rem;
+}
+
+.fondo-parte-central-abajo-titulo > h3 {
+    text-align: center;   
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+    line-height: 1.9;
+}
