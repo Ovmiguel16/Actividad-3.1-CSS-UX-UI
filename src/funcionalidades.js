@@ -1,5 +1,5 @@
 AOS.init() // libreria de animaciones al hacer scroll
-require('./style.css')
+// require('./style.css')
 
 const botonMenuDespegable = document.getElementById('hamburgermenu');
 const contenedorDespegable = document.getElementById('contenedorDespegable');
